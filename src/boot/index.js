@@ -2,5 +2,4 @@ import QSwipeToClose from 'quasar-app-extension-swipe-to-close/src/components/Sw
 
 export default async ({ Vue }) => {
   Vue.component('q-swipe-to-close', QSwipeToClose)
-  Vue.component('QSwipeToClose', QSwipeToClose)
 }

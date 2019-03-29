@@ -16,8 +16,8 @@ function extendWithComponent (api, conf) {
   const boot = conf.boot
 
   // make sure boot file is registered
-  if (!boot.includes('quasar-app-extension-swipe-to-close/src/boot/index.js')) {
-    boot.push('quasar-app-extension-swipe-to-close/src/boot/index.js')
+  if (!boot.includes('~quasar-app-extension-swipe-to-close/src/boot/index.js')) {
+    boot.push('~quasar-app-extension-swipe-to-close/src/boot/index.js')
     // make sure boot file transpiles
     conf.build.transpileDependencies.push(/quasar-app-extension-swipe-to-close[\\/]src[\\/]boot/)
     console.log(` App Extension (qswipe-to-close) Info: 'Adding swipe-to-close boot reference to your quasar.conf.js'`)
