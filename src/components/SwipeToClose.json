@@ -1,0 +1,14 @@
+{
+  "type": "component",
+  "props": {
+    "value": {
+      "type": "Boolean",
+      "desc": "Must be the same boolean that controls your QDialog. Must be added via v-model.",
+    }
+  },
+  "slots": {
+    "default": {
+      "desc": "Anything can go into this slot. It is your actual QDialog content."
+    }
+  }
+}

@@ -1,2 +1,5 @@
-# quasar-app-extension-swipe-down-to-close
-A Quasar Framework app extension that allows you to close dialogs by swiping down on them.
+# Quasar extension: Swipe to close
+
+> quasar-app-extension-swipe-to-close
+
+A Quasar Framework app extension that allows you to close dialogs by swiping.
