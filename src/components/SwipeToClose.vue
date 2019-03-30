@@ -46,16 +46,29 @@ export default {
   methods:
   {
     handlePan (details) {
+      // if the modal is longer than the screen & content is scrolled, disable swipe to close
       const topVisible = isElementInViewport(document.getElementById('js-swipe-disable-line'))
       if (details.direction === 'up' || !topVisible) return
       details.evt.preventDefault()
       details.evt.stopPropagation()
+      // enable `swiping` to disable transitions while touching the element
       if (details.isFirst) this.swiping = true
+      // translate the element
       this.translateY = details.offset.y
       if (details.isFinal) {
-        if (this.translateY > 180) this.$emit('input', false)
+        // disable `swiping` to enable transitions
         this.swiping = false
-        this.translateY = 0
+        const relativeSwipeDistance = this.translateY / this.$el.clientHeight
+        // if swiped < 25% distance reset the modal
+        if (relativeSwipeDistance < 0.25) {
+          this.translateY = 0
+          return
+        }
+        // bring the modal all the way down
+        this.translateY = this.$q.screen.height
+        setTimeout(_ => this.$emit('input', false), 100)
+        // reset modal position after transition
+        setTimeout(_ => this.translateY = 0, 300)
       }
     },
   }
