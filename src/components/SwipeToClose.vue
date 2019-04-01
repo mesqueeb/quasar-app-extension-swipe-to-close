@@ -4,8 +4,10 @@
   :style="style"
   v-touch-pan.vertical.mouse.mightPrevent.mouseMightPrevent="handlePan"
 >
-  <div class="__swipe-disable-line" id="js-swipe-disable-line"></div>
-  <slot />
+  <div>
+    <div class="__swipe-disable-line" id="js-swipe-disable-line"></div>
+    <slot />
+  </div>
 </div>
 </template>
 
@@ -13,13 +15,16 @@
 
 .ext-swipe-to-close
   transition all 300ms
+  > div
+    position relative
   &.--swiping
     transition all 0ms
   .__swipe-disable-line
     width 100%
+    position absolute
+    top -15px
     height 1px
     background transparent
-    margin-top -1px
 
 </style>
 
