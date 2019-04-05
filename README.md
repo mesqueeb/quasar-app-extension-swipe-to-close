@@ -14,7 +14,7 @@ quasar ext add swipe-to-close
 
 > Works best with "mobile view".
 
-![gif](https://github.com/mesqueeb/quasar-app-extension-swipe-to-close/blob/media/swipe-to-close.gif)
+![gif](https://github.com/mesqueeb/quasar-app-extension-swipe-to-close/blob/media/swipe-to-scroll.gif)
 
 ### Usage
 
