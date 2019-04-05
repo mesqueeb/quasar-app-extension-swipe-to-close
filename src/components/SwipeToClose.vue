@@ -4,27 +4,34 @@
   :style="style"
   v-touch-pan.vertical.mouse.mightPrevent.mouseMightPrevent="handlePan"
 >
-  <div>
-    <div class="__swipe-disable-line" id="js-swipe-disable-line"></div>
-    <slot />
-  </div>
+  <div
+    class="ext-swipe-to-close__swipe-disable-line"
+    id="js-swipe-disable-line"
+  ></div>
+  <slot />
 </div>
 </template>
 
-<style lang="stylus" scoped>
+<style lang="stylus">
 
 .ext-swipe-to-close
   transition all 300ms
-  > div
-    position relative
+  position relative
+  > div:not(.ext-swipe-to-close__swipe-disable-line)
+    height inherit
+    min-height fit-content
   &.--swiping
     transition all 0ms
-  .__swipe-disable-line
+  &__swipe-disable-line
     width 100%
     position absolute
-    top -15px
     height 1px
     background transparent
+    top -15px
+.q-dialog__inner--maximized
+  .ext-swipe-to-close
+    &__swipe-disable-line
+      top 1px !important
 
 </style>
 
