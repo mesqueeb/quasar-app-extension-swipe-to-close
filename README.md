@@ -1,6 +1,11 @@
-# Quasar extension: Swipe to close
+# Quasar extension: Swipe to close ⛸
 
 A Quasar extension that allows you to close dialogs by swiping.
+
+### My extensions
+
+- [swipe-to-close](https://github.com/mesqueeb/quasar-app-extension-swipe-to-close)  ⛸
+- [draggable](https://github.com/mesqueeb/quasar-app-extension-draggable) 🚡
 
 ### Installation
 
