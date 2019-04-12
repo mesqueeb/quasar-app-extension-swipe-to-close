@@ -1,6 +1,6 @@
 # Quasar extension: Swipe to close
 
-A Quasar Framework app extension that allows you to close dialogs by swiping.
+A Quasar extension that allows you to close dialogs by swiping.
 
 ### Installation
 
@@ -10,9 +10,10 @@ quasar ext add swipe-to-close
 
 ### Demo
 
-[interactive demo](https://quasar-app-extension-swipe-to-close.netlify.com/)
+- [live demo](https://quasar-app-extension-swipe-to-close.netlify.com/)
+- [demo github repository](https://github.com/mesqueeb/quasar-app-extension-swipe-to-close-demo)
 
-> Works best with "mobile view".
+**GIF** (might take a while to load...)
 
 ![gif](https://github.com/mesqueeb/quasar-app-extension-swipe-to-close/blob/media/swipe-to-scroll.gif)
 
@@ -41,4 +42,6 @@ export default {
 </script>
 ```
 
-> Please note currently it only supports `position="bottom"`. If there's interest for other dialog positions and swipe directions, let me know in an issue!
+> Please note currently it only supports `position="bottom"` or no position.
+
+If there's interest for other dialog positions and swipe directions, **let me know in an issue!**
