@@ -36,9 +36,13 @@
 </style>
 
 <script>
+import { TouchPan } from 'quasar'
 import { isElementInViewport } from '../helpers/domHelpers'
 
 export default {
+  directives: {
+    TouchPan
+  },
   props: {
     value: Boolean,
     direction: String, // not yet supported

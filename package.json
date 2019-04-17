@@ -3,10 +3,17 @@
   "version": "0.0.6",
   "description": "A Quasar extension that allows you to close dialogs by swiping.",
   "author": "Luca Ban - Mesqueeb",
+  "license": "MIT",
   "main": "src/index.js",
   "scripts": {
     "test": "echo \"No test specified\" && exit 0"
   },
+  "bugs": "https://github.com/mesqueeb/quasar-app-extension-swipe-to-close/issues",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mesqueeb/quasar-app-extension-swipe-to-close.git"
+  },
+  "homepage": "https://github.com/mesqueeb/quasar-app-extension-swipe-to-close",
   "engines": {
     "node": ">= 8.9.0",
     "npm": ">= 5.6.0",
