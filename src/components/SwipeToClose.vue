@@ -56,6 +56,7 @@
 
 <script>
 import { isElementInViewport } from '../helpers/domHelpers'
+import { TouchPan } from 'quasar'
 
 export default {
   props: {
@@ -76,6 +77,9 @@ export default {
     style () {
       return { transform: `translateY(${this.translateY}px)` }
     },
+  },
+  directives: {
+    TouchPan
   },
   methods:
   {
