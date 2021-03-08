@@ -1,5 +1,9 @@
 # Quasar extension: Swipe to close ⛸
 
+> ARCHIVED:
+> When I need similar functionality again in the future I will
+> recreate a new project that is framework agnostic.
+
 A Quasar extension that allows you to close dialogs by swiping.
 
 ### My extensions
